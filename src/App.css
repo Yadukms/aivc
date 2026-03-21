@@ -1,0 +1,6 @@
+/* Reset App.css as we are using index.css for global styles and component-specific CSS */
+html, body, #root, .app {
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+}

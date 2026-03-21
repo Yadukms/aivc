@@ -1,0 +1,163 @@
+.testimonials {
+  position: relative;
+  width: 100%;
+  padding: 100px 10%;
+  background-color: #f7f9f9;
+  overflow: hidden;
+  font-family: 'Public Sans', sans-serif;
+  color: #1a1a1a;
+}
+
+.testimonials-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonials-title {
+  font-size: 48px;
+  font-weight: 650;
+  margin-bottom: 60px;
+  text-align: left;
+}
+
+.testimonials-content {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.testimonials-image-side {
+  position: relative;
+  flex: 1;
+  max-width: 500px;
+  height: 400px;
+  z-index: 5;
+}
+
+.parallelogram-bg {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  width: 100%;
+  height: 100%;
+  background-color: #b5ccca;
+  clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 100%);
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.image-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 100%);
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.client-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.testimonials-text-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  position: relative;
+  z-index: 3;
+}
+
+.quote-icon {
+  margin-bottom: 10px;
+}
+
+.testimonial-quote {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #1a1a1a;
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+
+.testimonial-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #09888E;
+  margin: 20px 0;
+}
+
+.testimonial-author {
+  font-size: 18px;
+  font-weight: 700;
+  color: #617171;
+}
+
+.pagination-dots {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #d1d5db;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #09888E;
+}
+
+@media (max-width: 1024px) {
+  .testimonials {
+    padding: 60px 1.5rem;
+  }
+
+  .testimonials-content {
+    flex-direction: column;
+    gap: 40px;
+    display: flex;
+  }
+
+  .testimonials-image-side {
+    width: 90% !important;
+    max-width: 400px !important;
+    height: 300px !important;
+    margin: 0 auto 50px !important;
+    flex: none !important;
+    display: block !important;
+  }
+
+  .testimonials-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .testimonial-quote {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  .testimonial-divider {
+    width: 60%;
+    margin: 15px auto;
+  }
+
+  .pagination-dots {
+    justify-content: center;
+    margin-top: 30px;
+  }
+}

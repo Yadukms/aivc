@@ -1,0 +1,116 @@
+.goldmine {
+  position: relative;
+  width: 100%;
+  height: 797px;
+  background-color: #eaf6f6; /* Light mint/teal background */
+  padding: 100px 10%;
+  overflow: hidden;
+  color: #333333;
+  display: flex;
+  align-items: center;
+}
+
+.goldmine-wrapper {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.goldmine-container {
+  max-width: 1100px;
+  width: 100%;
+  padding-left: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.goldmine-title {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 70px;
+  color: #1a1a1a;
+  letter-spacing: -0.5px;
+}
+
+.goldmine-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 30px 60px;
+  margin-bottom: 60px;
+}
+
+.goldmine-column {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.goldmine-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.goldmine-icon {
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.goldmine-item p {
+  font-size: 19px;
+  font-weight: 500;
+  line-height: normal;
+  color: #4b5563;
+  opacity: 0.9;
+  text-align: left;
+}
+
+.goldmine-footer {
+  font-size: 20px;
+  font-weight: 600;
+  color: #09888E;
+  margin-top: 40px;
+  text-align: left;
+}
+
+.goldmine-vector {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  pointer-events: none;
+  line-height: 0;
+}
+
+.goldmine-vector svg {
+  display: block;
+}
+
+@media (max-width: 968px) {
+  .goldmine {
+    padding: 60px 1.5rem;
+  }
+
+  .goldmine-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .goldmine-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .goldmine-item p {
+    font-size: 16px;
+  }
+
+  .goldmine-vector {
+    transform: scale(0.6);
+    transform-origin: bottom right;
+  }
+}

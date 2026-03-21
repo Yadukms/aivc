@@ -1,0 +1,181 @@
+.start-with-clarity {
+  position: relative;
+  width: 100%;
+  background-color: #ffffff;
+  overflow: hidden;
+  font-family: 'Public Sans', sans-serif;
+}
+
+.swc-container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.swc-content-wrapper {
+  display: flex;
+  min-height: 600px;
+  position: relative;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+/* Dark blue box with OG slant bend */
+.swc-text-box {
+  flex: 0 0 55%;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffffff;
+  background-color: #05324E;
+
+  /* Restoring the OG slant (bend) to reveal the image underneath */
+  /* Top-right stays at 100%, bottom-right cuts inward to 85% */
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+
+  /* Alignment with site content */
+  padding: 80px 40px 80px 10%;
+}
+
+/* Adjust padding for very large screens to keep text in container */
+@media (min-width: 1800px) {
+  .swc-text-box {
+    padding-left: calc((100% - 1440px) / 2 + 100px);
+  }
+}
+
+.swc-content {
+  position: relative;
+  z-index: 11;
+  max-width: 600px;
+}
+
+.swc-title {
+  font-size: 54px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  line-height: 1.1;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+}
+
+.swc-subtitle {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 45px;
+  line-height: 1.4;
+  opacity: 0.95;
+}
+
+.swc-button {
+  display: inline-block;
+  padding: 16px 36px;
+  background-color: #0B7175;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  width: fit-content;
+  white-space: nowrap;
+}
+
+.swc-button:hover {
+  background-color: #095a5d;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(11, 113, 117, 0.4);
+}
+
+.swc-image-box {
+  flex: 1;
+  /* Fills remaining 50% */
+  height: 600px;
+  background-image: url('/img5.png');
+  background-color: #eae8ee; /* Fill transparent PNG areas to match image background */
+  background-size: cover;
+  background-position: center left;
+  /* Align to left to show woman under slant */
+  background-repeat: no-repeat;
+
+  /* Slide under the blue box to fill the cutout space */
+  margin-left: -8%;
+  z-index: 5;
+}
+
+/* Mobile Adjustments (Matching OG Slant) */
+@media (max-width: 1024px) {
+  .start-with-clarity {
+    padding: 0;
+  }
+
+  .swc-content-wrapper {
+    flex-direction: column;
+    min-height: auto;
+    background-image: none;
+  }
+
+  .swc-text-box {
+    width: 100%;
+    flex: 0 0 auto;
+    padding: 80px 30px 120px 30px;
+    text-align: center;
+    align-items: center;
+    background-color: #05324E;
+    /* Translate the horizontal slant to a vertical slant for mobile */
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 50px), 0 100%);
+  }
+
+  .swc-content {
+    max-width: 100%;
+  }
+
+  .swc-image-box {
+    position: relative;
+    width: 100%;
+    flex: none;
+    /* Crucial: Prevents 'flex: 1' from collapsing height to 0 in column mode */
+    height: 400px;
+    background-image: url('/img5.png');
+    background-size: cover;
+    background-position: center;
+    margin-left: 0;
+    /* Reset desktop overlap */
+    margin-top: -49px;
+    /* Slide under the 50px vertical slant */
+    z-index: 5;
+  }
+
+  .swc-title {
+    font-size: 38px;
+    margin-bottom: 20px;
+  }
+
+  .swc-subtitle {
+    font-size: 18px;
+    margin-bottom: 35px;
+  }
+
+  .swc-button {
+    font-size: 16px;
+    padding: 14px 28px;
+    white-space: normal;
+  }
+}
+
+@media (max-width: 500px) {
+  .swc-text-box {
+    padding: 60px 20px 100px 20px;
+    /* Ample safe padding below */
+  }
+
+  .swc-title {
+    font-size: 30px;
+  }
+
+  .swc-image-box {
+    height: 300px;
+  }
+}
