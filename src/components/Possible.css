@@ -1,5 +1,5 @@
 .possible {
-  padding: 100px 10%;
+  padding: 40px 10% 100px; /* Tightened top padding */
   background-color: #ffffff;
   font-family: 'Public Sans', sans-serif;
   color: #1a1a1a;
@@ -75,7 +75,7 @@
 
 @media (max-width: 1024px) {
   .possible {
-    padding: 60px 1.5rem;
+    padding: 20px 1.5rem 60px;
   }
 
   .possible-header {

@@ -5,7 +5,7 @@
   background-color: #f7f9f9;
   overflow: hidden;
   font-family: 'Public Sans', sans-serif;
-  color: #1a1a1a;
+  color: #000000;
 }
 
 .testimonials-container {
@@ -18,6 +18,7 @@
   font-weight: 650;
   margin-bottom: 60px;
   text-align: left;
+  color: #1B1B1B;
 }
 
 .testimonials-content {

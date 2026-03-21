@@ -1,7 +1,7 @@
 .aligned-execution {
   position: relative;
   width: 100%;
-  padding: 100px 0;
+  padding: 100px 0 40px 0; /* Tightened bottom padding */
   background: linear-gradient(14deg, rgba(255, 255, 255, 0.60) 44.69%, rgba(27, 101, 148, 0.60) 93.39%);
   overflow: hidden;
   font-family: 'Public Sans', sans-serif;
@@ -156,7 +156,7 @@
 
 @media (max-width: 1024px) {
   .aligned-execution {
-    padding: 60px 1.5rem;
+    padding: 60px 1.5rem 20px;
   }
 
   .ae-content-wrapper {

@@ -3,7 +3,7 @@
   width: 100%;
   background-color: #ffffff;
   padding: 100px 10%;
-  color: #1a1a1a;
+  color: #000000;
   font-family: 'Public Sans', sans-serif;
   overflow: hidden;
 }
@@ -40,6 +40,7 @@
   font-weight: 600;
   margin-bottom: 15px;
   line-height: 1.2;
+  color: #1B1B1B;
 }
 
 .teal-subtext {
@@ -199,7 +200,8 @@
     position: relative;
     width: 100%;
     max-width: 480px;
-    margin-bottom: -150px; /* Stronger overlap to show depth */
+    margin-bottom: -150px;
+    /* Stronger overlap to show depth */
     z-index: 5;
   }
 
@@ -211,7 +213,8 @@
 
   .svg-middle {
     position: absolute;
-    top: 55%; /* Centered horizontally across the junction */
+    top: 55%;
+    /* Centered horizontally across the junction */
     left: -5%;
     width: 110%;
     height: auto;
@@ -224,13 +227,14 @@
 
   .accordion-wrapper {
     position: relative;
-    z-index: 10; /* Top layer */
+    z-index: 10;
+    /* Top layer */
     width: 100%;
     max-width: 100%;
     margin-left: 0;
     margin-top: 0;
     padding: 60px 25px 40px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
   }
 
   .svg-bg {
@@ -238,7 +242,8 @@
     top: 10%;
     left: -10%;
     width: 120%;
-    z-index: 1; /* Furthest back */
+    z-index: 1;
+    /* Furthest back */
     opacity: 0.4;
   }
 }
