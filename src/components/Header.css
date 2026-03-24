@@ -40,6 +40,14 @@
   color: #007474;
 }
 
+.nav-list a.active-link {
+  background-color: #e4ecec;
+  color: #1a1a1a;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
 .contact-btn {
   background-color: #007474;
   color: #ffffff;

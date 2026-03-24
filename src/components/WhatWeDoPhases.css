@@ -1,0 +1,160 @@
+.wwd-phases {
+  position: relative;
+  width: 100%;
+  padding: 8rem 0 0;
+  /* No bottom padding */
+  background-color: #ffffff;
+  /* fallback */
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  /* Align container to bottom */
+  min-height: 500px;
+  /* Further reduced from 900px to 750px per user request */
+}
+
+.wwd-phases-svg-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 234px); /* Implements the 234px gap from bottom as requested */
+  z-index: 2;
+  pointer-events: none;
+}
+
+.wwd-phases-container {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  max-width: 1000px;
+  /* Slightly wider to let the card sit on the right */
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.wwd-phases-card {
+  width: 55%;
+  max-width: 650px;
+  background-color: #1a3333;
+  padding: 4.5rem 4rem;
+  color: #ffffff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+
+}
+
+.wwd-phases-intro {
+  font-family: 'Public Sans', sans-serif;
+  color: #00d2d2;
+  /* Cyan/Teal accent */
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 3.5rem;
+}
+
+.wwd-phases-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.wwd-phase-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+
+
+.wwd-phase-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.wwd-phase-header:hover {
+  opacity: 0.8;
+}
+
+.wwd-phase-header h3 {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.wwd-phase-icon {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.wwd-phase-content-wrapper {
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+.wwd-phase-content {
+  padding-bottom: 2rem;
+  padding-top: 0.5rem;
+}
+
+.wwd-phase-desc {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #e4e4e4;
+  margin-bottom: 1.2rem;
+}
+
+.wwd-phase-takeaway {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1.6;
+  color: #00d2d2;
+  /* Cyan italic takeaway */
+  margin: 0;
+}
+
+/* Mobile responsive */
+@media (max-width: 968px) {
+  .wwd-phases {
+    padding: 0;
+    min-height: auto;
+    display: block;
+  }
+
+  .wwd-phases-svg-bg {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .wwd-phases-container {
+    justify-content: center;
+    padding: 0 1.5rem;
+  }
+
+  .wwd-phases-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 2.5rem 1.5rem;
+  }
+
+  .wwd-phases-intro {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+
+  .wwd-phase-header h3 {
+    font-size: 1.05rem;
+  }
+}

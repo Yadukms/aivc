@@ -1,0 +1,116 @@
+.wwd-how {
+  position: relative;
+  width: 100%;
+  padding: 8rem 0;
+  background-color: #1a3c3e; /* Main teal */
+  overflow: hidden;
+}
+
+/* Geometric background elements to match the screenshot */
+.wwd-how-bg-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 55%;
+  background-color: #153133; /* Darker right panel */
+  z-index: 1;
+}
+
+.wwd-how-bg-bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 25%;
+  background-color: rgba(0, 0, 0, 0.12); /* Darker bottom bar */
+  z-index: 2;
+}
+
+.wwd-how-bg-triangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 70%;
+  background-color: rgba(0, 0, 0, 0.15); /* Top left triangle */
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+  z-index: 2;
+}
+
+.wwd-how-container {
+  position: relative;
+  z-index: 3;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wwd-how-left {
+  flex: 0 0 45%;
+}
+
+.wwd-how-title {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 0;
+  padding-left: 2rem; /* Give it some slight offset within its column */
+}
+
+.wwd-how-right {
+  flex: 0 0 50%;
+  padding-right: 2rem;
+}
+
+.wwd-how-text {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #e4e4e4;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 968px) {
+  .wwd-how {
+    padding: 4rem 0;
+  }
+  
+  .wwd-how-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 0 1.5rem;
+  }
+  
+  .wwd-how-left, .wwd-how-right {
+    flex: 1 1 auto;
+    width: 100%;
+    padding: 0;
+  }
+  
+  .wwd-how-title {
+    font-size: 1.8rem;
+    padding-left: 0;
+    line-height: 1.3;
+  }
+
+  .wwd-how-text {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .wwd-how-bg-right {
+    width: 100%;
+    top: 50%;
+  }
+
+  .wwd-how-bg-triangle {
+    width: 50%;
+  }
+}

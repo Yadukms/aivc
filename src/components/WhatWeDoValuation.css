@@ -1,0 +1,154 @@
+.wwd-val {
+  display: flex;
+  width: 100%;
+  position: relative;
+  min-height: 550px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.wwd-val-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 55%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.wwd-val-content {
+  margin-left: 45%;
+  width: 55%;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 4rem;
+}
+
+.wwd-val-shape-bg {
+  position: absolute;
+  top: -200px;
+  right: -50px;
+  width: 900px;
+  height: 787px;
+  z-index: 1;
+}
+
+.wwd-val-shape-cyan {
+  position: absolute;
+  top: -150px;
+  right: 660px;
+  /* Tweaking slightly to sit to the left of the dark shape */
+  width: 111px;
+  height: 537px;
+  z-index: 3;
+}
+
+.wwd-val-shape-dark {
+  position: absolute;
+  top: -50px;
+  right: 610px;
+  width: 273px;
+  height: 711px;
+  z-index: 2;
+}
+
+.wwd-val-shape-white {
+  position: absolute;
+  bottom: 1px;
+  right: 778px;
+  /* Guessing position based on screenshot */
+  width: 95px;
+  height: 194px;
+  z-index: 6;
+  /* Bring above everything to ensure visibility */
+}
+
+.wwd-val-text {
+  position: relative;
+  z-index: 4;
+  max-width: 450px;
+  font-family: 'Public Sans', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Optional darker horizontal bar at bottom based on screenshot */
+.wwd-val-footer-bar {
+  position: absolute;
+  bottom: 0;
+  left: 739px;
+  width: 999px;
+  height: 100px;
+  background-color: #122222;
+  /* Very dark bottom bar */
+  z-index: 5;
+}
+
+@media (max-width: 968px) {
+  .wwd-val {
+    flex-direction: column;
+    min-height: auto;
+    background-color: #075F62; /* Match the dark teal background for continuity on mobile */
+  }
+
+  .wwd-val-image {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background-position: center;
+  }
+
+  .wwd-val-content {
+    margin-left: 0;
+    width: 100%;
+    padding: 4rem 1.5rem;
+    background-color: #075F62; /* Ensure consistent background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wwd-val-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: center;
+    color: #ffffff;
+    max-width: 100%;
+    z-index: 4;
+  }
+
+  .wwd-val-shape-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transform: none;
+    opacity: 0.5; /* Subtler on mobile */
+  }
+
+  /* Simplify decorative shapes on mobile */
+  .wwd-val-shape-cyan,
+  .wwd-val-shape-dark,
+  .wwd-val-shape-white {
+    display: none;
+  }
+
+  .wwd-val-footer-bar {
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #122222;
+    z-index: 5;
+    bottom: auto;
+  }
+}

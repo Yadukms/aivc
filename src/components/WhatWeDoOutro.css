@@ -1,0 +1,53 @@
+.wwd-outro {
+  background-color: #122222;
+  width: 100%;
+  padding: 5rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wwd-outro-content {
+  max-width: 900px;
+  text-align: left; /* Image has it left aligned but grouped tightly, or center? Wait! Image looks carefully left-aligned but in the center of the screen */
+  color: #ffffff;
+  font-family: 'Public Sans', sans-serif;
+  margin: 0 auto;
+}
+
+.wwd-outro-text-main {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.wwd-outro-text-sub {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #00d2d2;
+  font-style: italic;
+}
+
+.wwd-outro-text-sub em {
+  font-style: italic;
+}
+
+.wwd-outro-text-sub sup {
+  font-size: 0.75rem;
+  vertical-align: super;
+}
+
+@media (max-width: 768px) {
+  .wwd-outro {
+    padding: 3rem 1.5rem;
+  }
+  
+  .wwd-outro-text-main {
+    font-size: 1rem;
+  }
+  
+  .wwd-outro-text-sub {
+    font-size: 0.85rem;
+  }
+}

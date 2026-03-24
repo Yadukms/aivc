@@ -1,0 +1,147 @@
+.wwd-cta {
+  position: relative;
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.wwd-cta-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+  z-index: 1;
+}
+
+.wwd-cta-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.1) 100%);
+  z-index: 2;
+}
+
+.wwd-cta-container {
+  position: relative;
+  z-index: 4;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.wwd-cta-box {
+  background-color: #122c2e;
+  /* Dark teal from screenshot */
+  padding: 4rem;
+  max-width: 650px;
+  color: #fff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.wwd-cta-heading {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.wwd-cta-text {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  opacity: 0.9;
+}
+
+.wwd-cta-text p {
+  margin-bottom: 0.5rem;
+}
+
+.wwd-cta-button {
+  background-color: #0d8489;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  font-family: 'Public Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+.wwd-cta-button:hover {
+  background-color: #129ea5;
+}
+
+.wwd-cta-shapes {
+  position: absolute;
+  top: 0;
+  right: 100px;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  pointer-events: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.wwd-cta-shape-1,
+.wwd-cta-shape-2 {
+  position: absolute;
+  height: 120%;
+  width: auto;
+}
+
+.wwd-cta-shape-1 {
+  right: 0;
+  top: -10%;
+}
+
+.wwd-cta-shape-2 {
+  right: -150px;
+  top: -5%;
+}
+
+@media (max-width: 968px) {
+  .wwd-cta {
+    min-height: auto;
+    padding: 4rem 1.5rem;
+  }
+
+  .wwd-cta-container {
+    padding: 0;
+  }
+
+  .wwd-cta-box {
+    padding: 3rem 1.5rem;
+    max-width: 100%;
+  }
+
+  .wwd-cta-heading {
+    font-size: 1.8rem; /* Reduced from 2rem */
+    margin-bottom: 1.5rem;
+  }
+
+  .wwd-cta-text {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .wwd-cta-shapes {
+    display: none; /* Hide decorative strokes on small screens to avoid clutter */
+  }
+}

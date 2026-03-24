@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink, Link } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
@@ -8,9 +9,9 @@ const Header = () => {
     <header className="header">
       <div className="header-container">
         <div className="logo">
-          <a href="/">
+          <Link to="/">
             <img src="/logo.png" alt="AI Venture Catalyst" />
-          </a>
+          </Link>
         </div>
 
         <button
@@ -23,16 +24,16 @@ const Header = () => {
 
         <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
           <ul className="nav-list">
-            <li><a href="#what-we-do" onClick={() => setIsMenuOpen(false)}>What We Do</a></li>
-            <li><a href="#ai-business" onClick={() => setIsMenuOpen(false)}>AI Business Building</a></li>
-            <li><a href="#who-we-are" onClick={() => setIsMenuOpen(false)}>Who We Are</a></li>
-            <li><a href="#investors" onClick={() => setIsMenuOpen(false)}>Investors</a></li>
-            <li className="mobile-only"><a href="#contact" className="contact-btn" onClick={() => setIsMenuOpen(false)}>Contact</a></li>
+            <li><NavLink to="/what-we-do" className={({isActive}) => isActive ? "active-link" : ""} onClick={() => setIsMenuOpen(false)}>What We Do</NavLink></li>
+            <li><NavLink to="/ai-business" className={({isActive}) => isActive ? "active-link" : ""} onClick={() => setIsMenuOpen(false)}>AI Business Building</NavLink></li>
+            <li><NavLink to="/who-we-are" className={({isActive}) => isActive ? "active-link" : ""} onClick={() => setIsMenuOpen(false)}>Who We Are</NavLink></li>
+            <li><NavLink to="/investors" className={({isActive}) => isActive ? "active-link" : ""} onClick={() => setIsMenuOpen(false)}>Investors</NavLink></li>
+            <li className="mobile-only"><NavLink to="/contact" className="contact-btn" onClick={() => setIsMenuOpen(false)}>Contact</NavLink></li>
           </ul>
         </nav>
 
         <div className="header-actions">
-          <a href="#contact" className="contact-btn">Contact</a>
+          <NavLink to="/contact" className="contact-btn">Contact</NavLink>
         </div>
       </div>
     </header>
