@@ -2,10 +2,17 @@
   width: 100%;
   background-color: #ffffff;
   border-bottom: 1px solid #eeeeee;
-  position: sticky;
+  position: fixed; /* Changed from sticky to fixed for better consistency */
   top: 0;
+  left: 0;
   z-index: 1000;
-  padding: 1rem 0;
+  padding: 0.8rem 0; /* Slightly more compact */
+  transition: all 0.3s ease;
+}
+
+.header.scrolled {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* Professional shadow on scroll */
+  padding: 0.6rem 0;
 }
 
 .header-container {

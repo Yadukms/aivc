@@ -4,3 +4,13 @@ html, body, #root, .app {
   margin: 0 auto;
   overflow-x: hidden;
 }
+
+.app {
+  padding-top: 80px; /* Offset for fixed header */
+}
+
+@media (max-width: 968px) {
+  .app {
+    padding-top: 70px; /* Smaller offset for mobile header */
+  }
+}

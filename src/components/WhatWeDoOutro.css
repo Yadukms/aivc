@@ -40,14 +40,21 @@
 
 @media (max-width: 768px) {
   .wwd-outro {
-    padding: 3rem 1.5rem;
+    padding: 5rem 1.5rem;
   }
   
+  .wwd-outro-content {
+    text-align: center;
+  }
+
   .wwd-outro-text-main {
-    font-size: 1rem;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
   }
   
   .wwd-outro-text-sub {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
   }
 }
