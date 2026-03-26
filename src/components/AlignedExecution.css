@@ -1,7 +1,8 @@
 .aligned-execution {
   position: relative;
   width: 100%;
-  padding: 100px 0 40px 0; /* Tightened bottom padding */
+  padding: 100px 0 40px 0;
+  /* Tightened bottom padding */
   background: linear-gradient(14deg, rgba(255, 255, 255, 0.60) 44.69%, rgba(27, 101, 148, 0.60) 93.39%);
   overflow: hidden;
   font-family: 'Public Sans', sans-serif;
@@ -25,7 +26,7 @@
 .ae-text-box {
   position: relative;
   width: 60%;
-  height: 525px;
+  height: 521px;
   top: -10px;
   /* 3/4 height */
   z-index: 10;
@@ -79,10 +80,13 @@
 .ae-accent-svg {
   position: absolute;
   left: 55%;
-  top: 48.5%;
-  transform: translate(-50%, -50%) rotate(1.697deg);
-  width: 150.749px;
-  height: 530px;
+  top: calc(50% - 10px);
+  /* Center relative to shifted .ae-text-box */
+  transform: translate(-50%, -50%) rotate(1.690deg);
+  /* Removed rotate(1.697deg) */
+  width: 151px;
+  height: 525px;
+  /* Match .ae-text-box height exactly */
   z-index: 20;
   pointer-events: none;
   overflow: visible;
@@ -196,7 +200,7 @@
     background-size: cover;
     background-position: center;
     border-radius: 15px;
-    filter: drop-shadow(0 4px 15px rgba(0,0,0,0.1));
+    filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.1));
   }
 
   .ae-image-box svg {

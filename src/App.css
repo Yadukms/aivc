@@ -6,11 +6,11 @@ html, body, #root, .app {
 }
 
 .app {
-  padding-top: 80px; /* Offset for fixed header */
+  padding-top: 66px; /* Offset for fixed header (40px logo + 0.8rem*2 padding) */
 }
 
 @media (max-width: 968px) {
   .app {
-    padding-top: 70px; /* Smaller offset for mobile header */
+    padding-top: 66px; /* Match desktop since header height is consistent */
   }
 }

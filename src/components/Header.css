@@ -1,7 +1,6 @@
 .header {
   width: 100%;
   background-color: #ffffff;
-  border-bottom: 1px solid #eeeeee;
   position: fixed; /* Changed from sticky to fixed for better consistency */
   top: 0;
   left: 0;

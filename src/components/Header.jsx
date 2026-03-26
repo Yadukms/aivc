@@ -45,6 +45,7 @@ const Header = () => {
             <li><NavLink to="/ai-business" className={({isActive}) => isActive ? "active-link" : ""} onClick={(e) => handleLinkClick(e, "/ai-business")}>AI Business Building</NavLink></li>
             <li><NavLink to="/who-we-are" className={({isActive}) => isActive ? "active-link" : ""} onClick={(e) => handleLinkClick(e, "/who-we-are")}>Who We Are</NavLink></li>
             <li><NavLink to="/investors" className={({isActive}) => isActive ? "active-link" : ""} onClick={(e) => handleLinkClick(e, "/investors")}>Investors</NavLink></li>
+            <li><NavLink to="/insights" className={({isActive}) => isActive ? "active-link" : ""} onClick={(e) => handleLinkClick(e, "/insights")}>Insights</NavLink></li>
             <li className="mobile-only"><NavLink to="/contact" className="contact-btn" onClick={(e) => handleLinkClick(e, "/contact")}>Contact</NavLink></li>
           </ul>
         </nav>

@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import WhatWeDo from './pages/WhatWeDo';
+import Insights from './pages/Insights';
 import './App.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/what-we-do" element={<WhatWeDo />} />
+          <Route path="/insights" element={<Insights />} />
         </Routes>
         <Footer />
       </div>
