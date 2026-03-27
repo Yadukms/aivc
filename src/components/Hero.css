@@ -40,7 +40,7 @@
 .hero-content {
   position: relative;
   z-index: 1;
-  max-width: 1000px;
+  max-width: 600px;
   text-align: left;
 }
 
@@ -56,29 +56,27 @@
 }
 
 .hero-subtitle {
-  font-size: 1.2rem;
+  font-family: "Public Sans", sans-serif;
+  font-size: 26px;
   font-weight: 500;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   opacity: 0.95;
-}
-
-.hero-tags {
-  font-size: 1.1rem;
-  font-weight: 400;
-  margin-bottom: 2.5rem;
-  opacity: 0.85;
+  line-height: 1.4;
 }
 
 .cta-btn {
   background-color: #007474;
   color: #ffffff;
-  padding: 1rem 2rem;
+  padding: 1rem 2.5rem;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  font-family: "Manrope", sans-serif;
   transition: all 0.3s ease;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cta-btn:hover {

@@ -1,0 +1,27 @@
+.presentation-section {
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.presentation-image-wrapper {
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+}
+
+.presentation-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .presentation-section {
+    min-height: 300px;
+  }
+}

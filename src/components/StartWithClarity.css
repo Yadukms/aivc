@@ -93,8 +93,9 @@
   flex: 1;
   /* Fills remaining 50% */
   height: 600px;
-  background-image: url('/img5.png');
-  background-color: #eae8ee; /* Fill transparent PNG areas to match image background */
+  background-image: url('/r2.png');
+  background-color: #eae8ee;
+  /* Fill transparent PNG areas to match image background */
   background-size: cover;
   background-position: center left;
   /* Align to left to show woman under slant */

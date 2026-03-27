@@ -119,29 +119,39 @@
 @media (max-width: 968px) {
   .wwd-cta {
     min-height: auto;
-    padding: 4rem 1.5rem;
+    padding: 60px 0;
   }
 
   .wwd-cta-container {
-    padding: 0;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
   }
 
   .wwd-cta-box {
-    padding: 3rem 1.5rem;
+    padding: 40px 25px;
     max-width: 100%;
+    width: 100%;
+    text-align: center;
   }
 
   .wwd-cta-heading {
-    font-size: 1.8rem; /* Reduced from 2rem */
-    margin-bottom: 1.5rem;
+    font-size: 24px;
+    margin-bottom: 20px;
   }
 
   .wwd-cta-text {
-    font-size: 1rem;
-    margin-bottom: 2rem;
+    font-size: 16px;
+    margin-bottom: 30px;
   }
 
   .wwd-cta-shapes {
-    display: none; /* Hide decorative strokes on small screens to avoid clutter */
+    display: none; /* Hide decorative strokes on mobile for a cleaner look */
+  }
+
+  .wwd-cta-button {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
   }
 }

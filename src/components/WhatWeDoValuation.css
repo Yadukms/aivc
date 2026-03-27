@@ -41,18 +41,28 @@
 .wwd-val-shape-cyan {
   position: absolute;
   top: -150px;
-  right: 660px;
+  right: 692px;
   /* Tweaking slightly to sit to the left of the dark shape */
   width: 111px;
   height: 537px;
   z-index: 3;
 }
 
+.wwd-val-shape-cyan-connect {
+  position: absolute;
+  top: 169px;
+  /* Positioned near the bottom of the visible cyan shape */
+  right: 770px;
+  width: 26px;
+  height: 53px;
+  z-index: 4;
+}
+
 .wwd-val-shape-dark {
   position: absolute;
   top: -50px;
-  right: 610px;
-  width: 273px;
+  right: 631px;
+  width: 263px;
   height: 711px;
   z-index: 2;
 }
@@ -60,10 +70,10 @@
 .wwd-val-shape-white {
   position: absolute;
   bottom: 1px;
-  right: 778px;
+  right: 735px;
   /* Guessing position based on screenshot */
-  width: 95px;
-  height: 194px;
+  width: 230px;
+  height: 150px;
   z-index: 6;
   /* Bring above everything to ensure visibility */
 }
@@ -71,7 +81,8 @@
 .wwd-val-text {
   position: relative;
   z-index: 4;
-  max-width: 450px;
+  max-width: 360px;
+  /* Force OG-style line wrapping */
   font-family: 'Public Sans', sans-serif;
   font-size: 1.05rem;
   line-height: 1.8;
@@ -95,7 +106,8 @@
   .wwd-val {
     flex-direction: column;
     min-height: auto;
-    background-color: #075F62; /* Match the dark teal background for continuity on mobile */
+    background-color: #075F62;
+    /* Match the dark teal background for continuity on mobile */
   }
 
   .wwd-val-image {
@@ -109,7 +121,8 @@
     margin-left: 0;
     width: 100%;
     padding: 4rem 1.5rem;
-    background-color: #075F62; /* Ensure consistent background */
+    background-color: #075F62;
+    /* Ensure consistent background */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,7 +145,8 @@
     height: 100%;
     z-index: 1;
     transform: none;
-    opacity: 0.5; /* Subtler on mobile */
+    opacity: 0.5;
+    /* Subtler on mobile */
   }
 
   /* Simplify decorative shapes on mobile */

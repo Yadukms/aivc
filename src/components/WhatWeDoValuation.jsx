@@ -28,11 +28,11 @@ const WhatWeDoValuation = () => {
           <defs>
             <linearGradient id="dark-shape-grad" x1="0%" y1="0%" x2="0%" y2="100%">
               <stop offset="70%" stopColor="#168589" />
-              <stop offset="85%" stopColor="#0C3237" />
+              <stop offset="72.8%" stopColor="#0C3237" />
               <stop offset="100%" stopColor="#0C3237" />
             </linearGradient>
           </defs>
-          <path d="M216.478 -1.09679e-05L272.701 -1.72654e-05L35.9702 710.404L-7.45318e-06 663.527L216.478 -1.09679e-05Z" fill="url(#dark-shape-grad)" />
+          <path d="M217 0H273L56 711H0L217 0Z" fill="url(#dark-shape-grad)" />
         </motion.svg>
 
         <motion.svg
@@ -43,7 +43,18 @@ const WhatWeDoValuation = () => {
           animate={isInView ? { x: 0, opacity: 1 } : { x: 100, opacity: 0 }}
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
         >
-          <path d="M153.013 4.50987e-05L230.942 4.54015e-05L49.6791 493.293L34.6563 536.908L-3.12628e-06 505.961L153.013 4.50987e-05Z" fill="#2FBDC3" />
+          <path d="M164 0H231L67 537H0L164 0Z" fill="#2FBDC3" />
+        </motion.svg>
+
+        {/* New Triangular accent connector */}
+        <motion.svg
+          className="wwd-val-shape-cyan-connect"
+          width="29" height="53" viewBox="0 0 29 53" fill="none" xmlns="http://www.w3.org/2000/svg"
+          initial={{ x: 50, opacity: 0 }}
+          animate={isInView ? { x: 0, opacity: 1 } : { x: 50, opacity: 0 }}
+          transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
+        >
+          <path d="M19.9745 52.6548L0 0L28.7546 25.5865L19.9745 52.6548Z" fill="#17787C" />
         </motion.svg>
 
         <motion.svg

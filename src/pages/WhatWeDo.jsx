@@ -18,8 +18,8 @@ const WhatWeDo = () => {
       <WhatWeDoPhases />
       <WhatWeDoWho />
       <WhatWeDoChanges />
-      <WhatWeDoValuation />
-      <WhatWeDoOutro />
+      {/* <WhatWeDoValuation />
+      <WhatWeDoOutro /> */}
       <WhatWeDoCTA />
     </main>
   );

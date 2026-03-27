@@ -11,61 +11,67 @@ const AlreadyHave = () => {
 
   return (
     <section className="already-have">
-      <div className="already-have-container">
-        <h2 className="already-have-title">What You Already Have</h2>
-
-        <div className="already-have-grid">
-          {/* Top Block */}
-          <div className="already-have-block">
-            <div className="already-have-left">
-              <p className="highlight-text">If your firm serves sophisticated enterprise clients, you likely possess:</p>
-              <div className="divider-small"></div>
-            </div>
-            <div className="already-have-right">
-              <div className="already-have-item">
-                <div className="already-have-icon"><ArrowIcon /></div>
-                <p>Structured decision frameworks</p>
-              </div>
-              <div className="already-have-item">
-                <div className="already-have-icon"><ArrowIcon /></div>
-                <p>Deep operational knowledge of how your clients function</p>
-              </div>
-              <div className="already-have-item">
-                <div className="already-have-icon"><ArrowIcon /></div>
-                <p>Proprietary data and accumulated insight</p>
-              </div>
-              <div className="already-have-item">
-                <div className="already-have-icon"><ArrowIcon /></div>
-                <p>Repeatable expertise that drives measurable outcomes</p>
-              </div>
-              <div className="divider-large"></div>
-            </div>
+      <div className="already-have-wrapper">
+        <div className="already-content-left">
+          <div className="already-header-group">
+            <h3 className="already-header-cyan">
+              If your firm serves sophisticated enterprise clients, you likely possess:
+            </h3>
+            <ul className="already-list">
+              <li className="already-list-item">
+                <div className="already-icon-wrapper"><ArrowIcon /></div>
+                <span>Structured decision frameworks</span>
+              </li>
+              <li className="already-list-item">
+                <div className="already-icon-wrapper"><ArrowIcon /></div>
+                <span>Deep operational knowledge of how your clients function</span>
+              </li>
+              <li className="already-list-item">
+                <div className="already-icon-wrapper"><ArrowIcon /></div>
+                <span>Proprietary data and accumulated insight</span>
+              </li>
+              <li className="already-list-item">
+                <div className="already-icon-wrapper"><ArrowIcon /></div>
+                <span>Repeatable expertise that drives measurable outcomes</span>
+              </li>
+            </ul>
           </div>
 
-          {/* Bottom Block */}
-          <div className="already-have-block">
-            <div className="already-have-left">
-              <p className="highlight-text">That intelligence does not need to remain embedded in services delivery. It can become:</p>
-              <div className="divider-small"></div>
-            </div>
-            <div className="already-have-right">
-              <div className="already-have-item">
-                <div className="already-have-icon"><ArrowIcon /></div>
-                <p>A standalone product business</p>
+          <div className="already-header-group">
+            <h3 className="already-header-cyan">
+              That intelligence does not need to remain embedded in services delivery. It can become:
+            </h3>
+            <ul className="already-list">
+              <li className="already-list-item">
+                <div className="already-icon-wrapper"><ArrowIcon /></div>
+                <span>AI Products</span>
+              </li>
+              <li className="already-list-item">
+                <div className="already-icon-wrapper"><ArrowIcon /></div>
+                <span>Generating annual recurring revenue</span>
+              </li>
+              <li className="already-list-item">
+                <div className="already-icon-wrapper"><ArrowIcon /></div>
+                <span>Built for scalable enterprise economics</span>
+              </li>
+              <li className="already-list-item">
+                <div className="already-icon-wrapper"><ArrowIcon /></div>
+                <span>The opportunity is already inside your firm.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="already-graphic-right">
+          <div className="already-slant-bg"></div>
+          <div className="hud-container">
+            <img src="/newimg5.png" alt="HUD Graphic" className="hud-graphic" />
+            <div className="hud-center-ellipse">
+              <div className="hud-inner-glow"></div>
+              <img src="/Ellipse 11.png" alt="Center Ellipse" className="ellipse-img" />
+              <div className="hud-text-overlay">
+                <span>Monetize Your Untapped IP</span>
               </div>
-              <div className="already-have-item">
-                <div className="already-have-icon"><ArrowIcon /></div>
-                <p>Generating annual recurring revenue</p>
-              </div>
-              <div className="already-have-item">
-                <div className="already-have-icon"><ArrowIcon /></div>
-                <p>Built for scalable enterprise economics</p>
-              </div>
-              <div className="already-have-item">
-                <div className="already-have-icon"><ArrowIcon /></div>
-                <p>The opportunity is already inside your firm.</p>
-              </div>
-              <div className="divider-large"></div>
             </div>
           </div>
         </div>

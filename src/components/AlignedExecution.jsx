@@ -53,7 +53,9 @@ const AlignedExecution = () => {
             <div className="ae-content">
               <h2 className="ae-title">Aligned Execution</h2>
               <p className="ae-subtitle">
-                We don't charge for ambition. We participate in results.
+                <span className="ae-subtitle-bold">Most firms charge retainers to explore transformation.</span>
+                <br />
+                <span className="ae-subtitle-highlight">We co-build and co-invest through structured revenue participation.</span>
               </p>
 
               <ul className="ae-points">
@@ -71,7 +73,7 @@ const AlignedExecution = () => {
               </ul>
 
               <p className="ae-footer-text">
-                We co-build and co-invest through structured revenue participation.
+                We don't charge for ambition. We participate in results.
               </p>
             </div>
           </div>
@@ -98,9 +100,8 @@ const AlignedExecution = () => {
               <path d={svgPath} fill="url(#pattern_unified_ae)" />
               <defs>
                 <pattern id="pattern_unified_ae" patternContentUnits="objectBoundingBox" width="1" height="1">
-                  <use xlinkHref="#image_unified_ae" transform="matrix(0.00112119 0 0 0.00133241 -0.406046 -0.0196144)" />
+                  <image xlinkHref="/r10.png" x="0" y="0" width="1" height="1" preserveAspectRatio="xMidYMid slice" />
                 </pattern>
-                <image id="image_unified_ae" width="1264" height="842" preserveAspectRatio="none" xlinkHref="/img3.png" />
               </defs>
             </svg>
           </div>
