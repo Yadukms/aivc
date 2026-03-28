@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import WhatWeDo from './pages/WhatWeDo';
+import AIBusinessBuilding from './pages/AIBusinessBuilding';
 import Insights from './pages/Insights';
 import './App.css';
 
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/what-we-do" element={<WhatWeDo />} />
+          <Route path="/ai-business" element={<AIBusinessBuilding />} />
           <Route path="/insights" element={<Insights />} />
         </Routes>
         <Footer />

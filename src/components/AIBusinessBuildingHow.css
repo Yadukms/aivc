@@ -1,0 +1,166 @@
+.aib-how {
+  display: flex;
+  min-height: 800px;
+  background-color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.aib-how-visual {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.aib-how-img-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aib-how-img {
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  /* Ensure it spans at least full width if possible, or omit for exact centering */
+  object-fit: cover;
+}
+
+.aib-how-slant-overlay {
+  position: absolute;
+  top: 0;
+  right: -50px;
+  /* Reduced to bring it closer to the split */
+  width: 150px;
+  height: 100%;
+  background-color: #ffffff;
+  transform: skewX(-15deg);
+  z-index: 2;
+}
+
+.aib-how-content-side {
+  flex: 1;
+  background-color: transparent;
+  /* Changed to transparent */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 80px 0;
+  position: relative;
+  z-index: 10;
+  margin-left: -150px;
+  /* This creates the overlap */
+}
+
+.aib-how-card {
+  width: 100%;
+  max-width: 850px;
+  background-color: #0b5151;
+  /* Dark teal background from image */
+  padding: 80px 70px;
+  color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.aib-how-title {
+  color: #ffffff;
+  font-family: "Public Sans", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.aib-how-accordion {
+  display: flex;
+  flex-direction: column;
+}
+
+.aib-how-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 10px 0;
+}
+
+.aib-how-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+.aib-how-phase-title {
+  font-family: "Public Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.aib-how-icon {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.aib-how-body {
+  padding-bottom: 25px;
+}
+
+.aib-how-desc {
+  font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 15px;
+}
+
+.aib-how-takeaway {
+  font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 500;
+  color: #1DCED5;
+  /* Bright teal for takeaway */
+}
+
+@media (max-width: 1100px) {}
+
+@media (max-width: 968px) {
+  .aib-how {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .aib-how-visual {
+    height: 350px;
+  }
+
+  .aib-how-slant-overlay {
+    display: none;
+  }
+
+  .aib-how-content-side {
+    padding: 20px;
+    margin-top: 0; /* Remove overlap for cleaner stack */
+    margin-left: 0;
+  }
+
+  .aib-how-card {
+    padding: 40px 24px;
+    box-shadow: none; /* Flatten for mobile */
+  }
+
+  .aib-how-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .aib-how-phase-title {
+    font-size: 18px;
+  }
+
+  .aib-how-desc {
+    font-size: 15px;
+  }
+}

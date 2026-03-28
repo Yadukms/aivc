@@ -1,0 +1,139 @@
+.aib-ready {
+  position: relative;
+  width: 100%;
+  min-height: 960px;
+  overflow: hidden;
+  background-color: #d9dadc;
+}
+
+.aib-ready-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 90%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Gradient overlay to blend with solid bg */
+.aib-ready-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100%;
+  background: linear-gradient(to right, #d9dadc, transparent);
+  z-index: 2;
+}
+
+.aib-ready-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.aib-ready-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin-left: 50px;
+  margin-top: 190px;
+  padding: 80px 10%;
+  display: flex;
+  align-items: center;
+}
+
+.aib-ready-card {
+  background-image: url('/a9.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 856px;
+  /* Adjust based on screenshot */
+  padding: 60px 50px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.aib-ready-title {
+  color: #FFF;
+  font-family: "Public Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 71px;
+  /* 147.917% */
+}
+
+.aib-ready-text {
+  color: #FFF;
+  font-family: "Public Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  /* 36px */
+}
+
+.aib-ready-btn {
+  background-color: #057979;
+  color: #ffffff;
+  border: none;
+  padding: 16px 24px;
+  border-radius: 8px;
+  font-family: "Public Sans";
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: fit-content;
+  margin-top: 24px;
+  /* Total 48px from text (24px gap + 24px margin) */
+}
+
+.aib-ready-btn:hover {
+  background-color: #046363;
+}
+
+@media (max-width: 968px) {
+  .aib-ready {
+    min-height: auto;
+  }
+
+  .aib-ready-bg {
+    width: 100%;
+    opacity: 0.3;
+    right: auto;
+    left: 0;
+  }
+
+  .aib-ready-container {
+    padding: 60px 1.5rem;
+    margin-top: 0;
+    margin-left: 0;
+    justify-content: center;
+    min-height: auto;
+  }
+
+  .aib-ready-card {
+    width: 100%;
+    padding: 40px 24px;
+    background-size: cover;
+    margin-left: 0;
+    gap: 20px;
+    box-shadow: none;
+  }
+
+  .aib-ready-title {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .aib-ready-text {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}
