@@ -1,0 +1,188 @@
+.wwa-values {
+  position: relative;
+  background-color: #075F62;
+  /* Dark teal background as per design */
+  color: #ffffff;
+  padding: 120px 0;
+  overflow: hidden;
+  min-height: 800px;
+}
+
+.wwa-values-vectors {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.wwa-vector1 {
+  position: absolute;
+  top: 950px;
+  left: -20px;
+  transform: translateY(-50%);
+  height: 100%;
+  opacity: 0.2;
+}
+
+.wwa-vector2 {
+  position: absolute;
+  bottom: -760px;
+  left: 0px;
+  transform: translateY(-50%);
+  height: 80%;
+  width: 500px;
+  /* Approximate width */
+  background-color: #134A4F;
+  -webkit-mask-image: url(/vector2.png);
+  mask-image: url(/vector2.png);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  z-index: 1;
+}
+
+.wwa-values-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+  display: flex;
+  gap: 80px;
+  z-index: 2;
+}
+
+.wwa-values-info {
+  flex: 0 0 300px;
+}
+
+.wwa-values-title {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.wwa-values-subtext {
+  font-size: 18px;
+  color: #00d2d3;
+  /* Cyan highlight */
+  font-weight: 500;
+}
+
+.wwa-values-content {
+  flex: 1;
+}
+
+.wwa-values-intro {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 60px;
+  opacity: 0.8;
+}
+
+.wwa-values-accordion {
+  display: flex;
+  flex-direction: column;
+}
+
+.wwa-accordion-item {
+  margin-bottom: 20px;
+}
+
+.wwa-accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+.wwa-accordion-title {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.wwa-accordion-icon {
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.wwa-accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  opacity: 0;
+}
+
+.wwa-accordion-item.open .wwa-accordion-body {
+  max-height: 400px;
+  padding-bottom: 30px;
+  opacity: 1;
+}
+
+.wwa-accordion-text {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.wwa-accordion-quote {
+  font-size: 18px;
+  color: #00d2d3;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.wwa-accordion-divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Mobile adjustments */
+@media (max-width: 968px) {
+  .wwa-values {
+    padding: 60px 0;
+    min-height: auto;
+  }
+
+  .wwa-values-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .wwa-values-info {
+    flex: none;
+    text-align: center;
+  }
+
+  .wwa-values-title {
+    font-size: 32px;
+  }
+
+  .wwa-values-intro {
+    font-size: 16px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .wwa-accordion-title {
+    font-size: 20px;
+  }
+
+  .wwa-accordion-text, .wwa-accordion-quote {
+    font-size: 16px;
+  }
+
+  .wwa-vector1, .wwa-vector2 {
+    opacity: 0.1;
+    transform: scale(0.8) translateY(-50%);
+  }
+}

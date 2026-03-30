@@ -1,0 +1,98 @@
+.wwa-why {
+  padding: 100px 0;
+  background-color: var(--bg);
+  color: var(--text-h);
+}
+
+.wwa-why-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.wwa-why-left {
+  flex: 1;
+}
+
+.wwa-why-right {
+  flex: 1.2;
+}
+
+.wwa-why-title {
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: var(--text-h);
+}
+
+.wwa-why-left-text {
+  font-size: 18px;
+  color: #008080; /* Teal/cyan color from design */
+  line-height: 1.5;
+  max-width: 320px;
+}
+
+.wwa-why-description {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--text);
+  margin-bottom: 40px;
+}
+
+.wwa-why-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.wwa-why-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #008080; /* Teal color */
+}
+
+.wwa-why-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wwa-why-text {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .wwa-why {
+    padding: 60px 0;
+  }
+
+  .wwa-why-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .wwa-why-title {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  
+  .wwa-why-left-text {
+    max-width: 100%;
+    font-size: 16px;
+  }
+
+  .wwa-why-description {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .wwa-why-text {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,149 @@
+.wwa-why-matters {
+  position: relative;
+  background-color: #f7fdfd;
+  /* Same light greenish white as testimonials background */
+  padding: 120px 0;
+  overflow: hidden;
+}
+
+.wwa-why-matters-z2-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55%;
+  height: 100%;
+  z-index: 1;
+}
+
+.wwa-z2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wwa-z1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.wwa-why-matters-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+  display: flex;
+  z-index: 2;
+  align-items: center;
+}
+
+.wwa-why-matters-left {
+  flex: 1;
+  padding-right: 50px;
+}
+
+.wwa-why-matters-right {
+  flex: 1.2;
+}
+
+.wwa-why-matters-title {
+  font-size: 36px;
+  font-weight: 600;
+  color: #1A3442;
+  margin-bottom: 30px;
+}
+
+.wwa-why-matters-subtext {
+  font-size: 22px;
+  color: #09888E;
+  font-weight: 600;
+  line-height: 1.4;
+  max-width: 700px;
+}
+
+.wwa-why-matters-content {
+  padding: 40px;
+}
+
+.wwa-why-matters-para {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #445664;
+  margin-bottom: 30px;
+}
+
+.wwa-why-matters-quote {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1A3442;
+  margin-bottom: 40px;
+}
+
+.wwa-why-matters-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.wwa-why-matters-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.wwa-why-icon {
+  flex: 0 0 24px;
+  display: flex;
+  align-items: center;
+}
+
+.wwa-why-text {
+  font-size: 16px;
+  color: #445664;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 968px) {
+  .wwa-why-matters {
+    padding: 60px 0;
+  }
+
+  .wwa-why-matters-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .wwa-why-matters-left {
+    padding-right: 0;
+  }
+
+  .wwa-why-matters-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .wwa-why-matters-subtext {
+    font-size: 18px;
+    max-width: 100%;
+  }
+
+  .wwa-why-matters-content {
+    padding: 30px 0;
+  }
+
+  .wwa-why-matters-para, .wwa-why-matters-quote, .wwa-why-text {
+    font-size: 16px;
+  }
+
+  .wwa-why-matters-z2-container {
+    width: 100%;
+    height: 50%;
+    top: auto;
+    bottom: 0;
+    opacity: 0.3;
+  }
+}
