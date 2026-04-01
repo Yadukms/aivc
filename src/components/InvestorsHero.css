@@ -1,0 +1,103 @@
+.investors-hero {
+  position: relative;
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: #0b2222;
+}
+
+.investors-hero-bg-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.investors-hero-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(11, 34, 34, 0.94);
+  z-index: 2;
+  clip-path: polygon(0 0, 48% 0, 68% 100%, 0% 100%);
+}
+
+.investors-hero-content {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 5%;
+  color: #ffffff;
+}
+
+.investors-hero-title {
+  color: #FFF;
+  font-family: "Public Sans", sans-serif;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 24px;
+  letter-spacing: -0.01em;
+  max-width: 700px;
+}
+
+.investors-hero-subtitle {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  opacity: 0.95;
+  max-width: 650px;
+  line-height: 1.5;
+  color: #e0e0e0;
+}
+
+/* Mobile responsive */
+@media (max-width: 1024px) {
+  .investors-hero-title {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 768px) {
+  .investors-hero {
+    min-height: 550px;
+    padding: 80px 0;
+  }
+
+  .investors-hero-overlay {
+    clip-path: none;
+    background: radial-gradient(circle at 50% 50%, rgba(11, 34, 34, 0.94) 0%, rgba(11, 34, 34, 0.8) 100%);
+  }
+
+  .investors-hero-content {
+    padding: 0 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .investors-hero-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    line-height: 1.25;
+    max-width: 100%;
+  }
+
+  .investors-hero-subtitle {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 100%;
+  }
+}

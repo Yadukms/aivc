@@ -1,0 +1,285 @@
+.inv-lifecycle {
+  position: relative;
+  background-color: #075F62;
+  /* Updated to match OG deeper teal */
+  color: #ffffff;
+  padding: 120px 5%;
+  overflow: hidden;
+  min-height: 800px;
+}
+
+.inv-lifecycle-vectors {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.inv-vector-c2 {
+  position: absolute;
+  top: 400px;
+  left: 0;
+  height: 100%;
+  opacity: 0.35;
+  object-fit: contain;
+  object-position: left;
+}
+
+.inv-vector-c3 {
+  position: absolute;
+  top: 500px;
+  left: -1000px;
+  width: 100%;
+  opacity: 0.25;
+  object-fit: contain;
+}
+
+.inv-vector-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 20% 50%, transparent 0%, rgba(0, 77, 77, 0.4) 80%);
+}
+
+.inv-lifecycle-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 100px;
+  z-index: 2;
+}
+
+.inv-lifecycle-info {
+  flex: 0 0 550px;
+}
+
+.inv-lifecycle-title {
+  font-family: "Public Sans", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.inv-lifecycle-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.inv-lifecycle-subtext {
+  font-family: "Public Sans", sans-serif;
+  font-size: 22px;
+  line-height: 1.6;
+  color: #e0e0e0;
+  opacity: 0.95;
+  margin-bottom: 60px;
+  max-width: 500px;
+}
+
+.inv-lifecycle-accordion {
+  display: flex;
+  flex-direction: column;
+}
+
+.inv-accordion-item {
+  margin-bottom: 0px;
+}
+
+.inv-accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.inv-accordion-header:hover .inv-accordion-title {
+  color: #00d1d1;
+}
+
+.inv-accordion-title {
+  font-family: "Public Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.inv-accordion-icon {
+  font-size: 28px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.inv-accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+}
+
+.inv-accordion-item.open .inv-accordion-body {
+  max-height: 1000px;
+  padding-bottom: 50px;
+  opacity: 1;
+}
+
+.inv-accordion-text {
+  font-family: "Public Sans", sans-serif;
+  font-size: 24px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #ffffff;
+  opacity: 0.9;
+  max-width: 80%;
+}
+
+.inv-accordion-we {
+  margin-bottom: 30px;
+}
+
+.inv-we-title {
+  font-family: "Public Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.inv-we-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.inv-we-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.inv-we-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.inv-we-item-text {
+  font-family: "Public Sans", sans-serif;
+  font-size: 24px;
+  color: #00d1d1;
+  font-weight: 600;
+}
+
+.inv-accordion-outcome {
+  margin-top: 40px;
+}
+
+.inv-outcome-label {
+  font-family: "Public Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.inv-outcome-text {
+  font-family: "Public Sans", sans-serif;
+  font-size: 24px;
+  color: #00d1d1;
+  font-style: italic;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.inv-accordion-divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Mobile adjustments */
+@media (max-width: 1024px) {
+  .inv-lifecycle {
+    padding: 80px 5%;
+  }
+
+  .inv-lifecycle-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .inv-lifecycle-info {
+    flex: none;
+    max-width: 100%;
+  }
+
+  .inv-lifecycle-title {
+    font-size: 36px;
+  }
+
+  .inv-lifecycle-subtext {
+    margin-bottom: 40px;
+    max-width: 100%;
+  }
+
+  .inv-vector-c3 {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .inv-lifecycle {
+    padding: 80px 1.5rem;
+  }
+
+  .inv-lifecycle-info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .inv-lifecycle-title {
+    font-size: 34px;
+    margin-bottom: 24px;
+  }
+
+  .inv-lifecycle-subtext {
+    font-size: 18px;
+    margin-bottom: 40px;
+    max-width: 100%;
+  }
+
+  .inv-accordion-header {
+    padding: 24px 0;
+  }
+
+  .inv-accordion-title {
+    font-size: 22px;
+  }
+
+  .inv-accordion-text,
+  .inv-we-item-text,
+  .inv-outcome-text,
+  .inv-we-title,
+  .inv-outcome-label {
+    font-size: 17px;
+  }
+
+  .inv-accordion-text {
+    max-width: 100%;
+  }
+}

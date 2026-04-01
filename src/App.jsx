@@ -8,6 +8,7 @@ import WhatWeDo from './pages/WhatWeDo';
 import AIBusinessBuilding from './pages/AIBusinessBuilding';
 import Insights from './pages/Insights';
 import WhoWeAre from './pages/WhoWeAre';
+import Investors from './pages/Investors';
 import './App.css';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/what-we-do" element={<WhatWeDo />} />
           <Route path="/ai-business" element={<AIBusinessBuilding />} />
           <Route path="/who-we-are" element={<WhoWeAre />} />
+          <Route path="/investors" element={<Investors />} />
           <Route path="/insights" element={<Insights />} />
         </Routes>
         <Footer />

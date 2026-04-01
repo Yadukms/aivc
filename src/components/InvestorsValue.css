@@ -1,0 +1,123 @@
+.investors-value {
+  padding: 100px 5%;
+  background-color: #ffffff;
+  color: #0b2222;
+}
+
+.investors-value-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+.investors-value-title {
+  font-family: "Public Sans", sans-serif;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 32px;
+  color: #0b2222;
+}
+
+.investors-value-left-content {
+  max-width: 500px;
+}
+
+.investors-value-text {
+  font-family: "Public Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #4a5568;
+  margin-bottom: 24px;
+}
+
+.investors-value-accent {
+  font-family: "Public Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #008a8a; /* Slightly darker teal for readability on white */
+}
+
+.investors-value-desc {
+  font-family: "Public Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #4a5568;
+  margin-bottom: 32px;
+}
+
+.investors-value-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.investors-value-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.investors-value-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.investors-value-item-text {
+  font-family: "Public Sans", sans-serif;
+  font-size: 18px;
+  color: #0b2222;
+  font-weight: 400;
+}
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+  .investors-value-container {
+    gap: 40px;
+  }
+  
+  .investors-value-title {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 768px) {
+  .investors-value {
+    padding: 80px 1.5rem;
+  }
+  
+  .investors-value-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    text-align: center;
+  }
+  
+  .investors-value-title {
+    font-size: 32px;
+    margin-bottom: 24px;
+    max-width: 100%;
+  }
+  
+  .investors-value-left-content,
+  .investors-value-desc {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .investors-value-item {
+    justify-content: center;
+    text-align: left;
+  }
+
+  .investors-value-item-text {
+    font-size: 17px;
+  }
+}
