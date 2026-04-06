@@ -83,7 +83,7 @@ const WhatThisCreates = () => {
                 </ul>
               </div>
               
-              <div className="what-creates-group" style={{ marginTop: '60px' }}>
+              <div className="what-creates-group">
                 <h3 className="what-creates-group-title">{stakeholderGroups[2].title}</h3>
                 <ul className="what-creates-list">
                   {stakeholderGroups[2].items.map((item, idx) => (

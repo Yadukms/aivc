@@ -80,7 +80,7 @@
 
 .ae-accent-svg {
   position: absolute;
-  left: 55%;
+  left: 55.1%;
   top: calc(50% - 10px);
   /* Center relative to shifted .ae-text-box */
   transform: translate(-50%, -50%) rotate(1.690deg);
@@ -193,7 +193,8 @@
 
   .ae-text-svg-bg,
   .ae-accent-svg {
-    display: none; /* Simplify on mobile */
+    display: none;
+    /* Simplify on mobile */
   }
 
   .ae-image-box {
@@ -203,7 +204,8 @@
     top: 0;
     right: 0;
     margin: 0;
-    background-image: url('/r10.png'); /* Use r10 from desktop pattern */
+    background-image: url('/r10.png');
+    /* Use r10 from desktop pattern */
     background-size: cover;
     background-position: center;
     border-radius: 12px;

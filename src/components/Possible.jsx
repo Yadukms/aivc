@@ -4,17 +4,13 @@ import './Possible.css';
 const Possible = () => {
   return (
     <section className="possible-section">
-      {/* <div className="possible-overlay"></div> */}
       <div className="possible-container">
         <div className="possible-box">
-          <h2 className="possible-title-cyan">
-            Imagine the Significant Possibilities
+          <h2 className="possible-title">
+            Imagine the Significant Possibilities that exist ......
           </h2>
-          <h2 className="possible-title-cyan">
-            that exist ......
-          </h2>
-          <p className="possible-text-white">
-            By creating AI Product
+          <p className="possible-subtitle">
+            By creating AI Products with AI Venture Catalyst
           </p>
         </div>
       </div>
