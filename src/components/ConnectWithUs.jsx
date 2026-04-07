@@ -4,24 +4,8 @@ import './ConnectWithUs.css';
 const ConnectWithUs = () => {
   return (
     <section className="connect-with-us">
-      <div className="cwu-bg-overlay">
-        <svg
-          width="1780.676"
-          height="1029.475"
-          viewBox="0 0 1780.676 1029.475"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
-          className="cwu-overlay-svg"
-        >
-          <path
-            d="M0 0L1780.68 0.000221252V1029.48H480.33L0 0Z"
-            fill="#061b1fff"
-            fillOpacity="0.6"
-          />
-        </svg>
-      </div>
-      <div className="cwu-container">
+      <div className="cwu-image-side"></div>
+      <div className="cwu-form-side">
         <div className="cwu-card">
           <div className="cwu-header">
             <h2 className="cwu-title">Connect With Us</h2>
@@ -67,7 +51,7 @@ const ConnectWithUs = () => {
 
             <div className="cwu-form-group full-width">
               <label className="cwu-label">About You</label>
-              <textarea placeholder="TELL US ABOUT YOU" className="cwu-textarea"></textarea>
+              <textarea placeholder="TELL US ABOUT YOU!" className="cwu-textarea"></textarea>
             </div>
 
             <div className="cwu-checkbox-group">

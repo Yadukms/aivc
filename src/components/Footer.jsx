@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="footer-top">
           <div className="footer-branding">
             <img src="/logo.png" alt="AI Venture Catalyst" className="footer-logo" />
-            <p className="footer-company-name">AI Venture Catalyst (logo text)</p>
+            <p className="footer-company-name">AI Venture Catalyst</p>
             <p className="footer-tagline">
               <span className="cyan-highlight">We build, fund, and commercialize AI product businesses from proprietary IP.</span>
             </p>
