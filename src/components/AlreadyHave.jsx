@@ -11,6 +11,19 @@ const AlreadyHave = () => {
 
   return (
     <section className="already-have">
+      <div className="already-video-bg">
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline 
+          className="already-video"
+        >
+          <source src="/aivc video.mp4" type="video/mp4" />
+        </video>
+        <div className="already-video-overlay"></div>
+      </div>
+
       <div className="already-have-wrapper">
         <div className="already-content-left">
           <div className="already-header-group">
@@ -44,7 +57,7 @@ const AlreadyHave = () => {
             <ul className="already-list">
               <li className="already-list-item">
                 <div className="already-icon-wrapper"><ArrowIcon /></div>
-                <span>AI Products</span>
+                <span>AI products</span>
               </li>
               <li className="already-list-item">
                 <div className="already-icon-wrapper"><ArrowIcon /></div>
@@ -60,17 +73,21 @@ const AlreadyHave = () => {
               </li>
             </ul>
           </div>
+
+          <div className="already-actions">
+            <button className="already-btn">Learn More</button>
+          </div>
         </div>
 
         <div className="already-graphic-right">
-          <div className="already-slant-bg"></div>
-          <div className="hud-container">
-            <img src="/newimg5.png" alt="HUD Graphic" className="hud-graphic" />
-            <div className="hud-center-ellipse">
-              <div className="hud-inner-glow"></div>
-              <img src="/Ellipse 11.png" alt="Center Ellipse" className="ellipse-img" />
-              <div className="hud-text-overlay">
-                <span>Monetize Your Untapped IP</span>
+          <div className="already-slant-overlay"></div>
+          <div className="already-circle-container">
+            <div className="already-circle-outer">
+              <div className="already-circle-glow"></div>
+              <div className="already-circle-inner">
+                <h2 className="already-circle-text">
+                  Monetize Your <br /> Untapped IP
+                </h2>
               </div>
             </div>
           </div>
