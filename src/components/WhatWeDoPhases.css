@@ -5,7 +5,8 @@
   background-color: #ffffff;
   overflow: hidden;
   display: flex;
-  align-items: flex-end; /* Card touches bottom */
+  align-items: flex-end;
+  /* Card touches bottom */
 }
 
 .wwd-phases-visuals {
@@ -39,7 +40,8 @@
   width: 100%;
   height: auto;
   display: block;
-  margin-bottom: 235px; /* The requested gap from bottom of section */
+  margin-bottom: 50px;
+  /* The requested gap from bottom of section */
 }
 
 .wwd-phases-content-side {
@@ -155,7 +157,8 @@
 
   .wwd-phases-content-side {
     width: 100%;
-    margin-top: -30px; /* Slight overlap for depth */
+    margin-top: -30px;
+    /* Slight overlap for depth */
   }
 
   .wwd-phases-card {

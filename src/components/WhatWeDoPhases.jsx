@@ -32,9 +32,9 @@ const WhatWeDoPhases = () => {
   return (
     <section className="wwd-phases">
       <div className="wwd-phases-visuals">
-        <img src="/r20.png" alt="Base background" className="wwd-phases-r20" />
+        <img src="/w4.png" alt="Base background" className="wwd-phases-r20" />
         <div className="wwd-phases-r30-container">
-          <img src="/r30.png" alt="Phases Visual" className="wwd-phases-r30" />
+          <img src="/w1.png" alt="Phases Visual" className="wwd-phases-r30" />
         </div>
       </div>
 

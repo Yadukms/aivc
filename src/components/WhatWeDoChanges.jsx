@@ -28,8 +28,6 @@ const WhatWeDoChanges = () => {
             </p>
           </div>
 
-          <div className="wwd-changes-divider"></div>
-
           <div className="wwd-changes-col">
             <div className="col-top-bar"></div>
             <h3 className="col-title">Full control. Zero dilution</h3>
@@ -40,11 +38,9 @@ const WhatWeDoChanges = () => {
             </p>
           </div>
 
-          <div className="wwd-changes-divider"></div>
-
           <div className="wwd-changes-col">
             <div className="col-top-bar"></div>
-            <h3 className="col-title">Transformed Valuation.</h3>
+            <h3 className="col-title">A valuation story most services firms never get to tell</h3>
             <p className="col-text">
               AI product revenue increases valuation multiples by an average of 
               <span className="text-highlight">25–30x</span>. For firms that pursue a carve-out, multiples 
