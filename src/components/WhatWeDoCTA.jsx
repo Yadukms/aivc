@@ -35,26 +35,31 @@ const WhatWeDoCTA = () => {
         </motion.div>
       </div>
 
-      {/* Decorative SVG shapes matching original design */}
+      {/* NFS-Style continuous moving arrows */}
       <div className="wwd-cta-shapes">
-        <motion.svg
-          className="wwd-cta-shape-1"
-          xmlns="http://www.w3.org/2000/svg" width="946" height="817" viewBox="0 0 946 817" fill="none"
-          initial={{ opacity: 0, x: 50 }}
-          animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
-          transition={{ duration: 1, delay: 0.2 }}
-        >
-          <path d="M60.6694 -114.73L762.391 340.356L101.271 935.662" stroke="#939393" stroke-opacity="0.19" stroke-width="223" />
-        </motion.svg>
-        <motion.svg
-          className="wwd-cta-shape-2"
-          xmlns="http://www.w3.org/2000/svg" width="748" height="817" viewBox="0 0 748 817" fill="none"
-          initial={{ opacity: 0, x: 100 }}
-          animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 100 }}
-          transition={{ duration: 1, delay: 0.4 }}
-        >
-          <path d="M60.6694 -137.697L762.391 317.389L101.271 912.695" stroke="#939393" stroke-opacity="0.39" stroke-width="223" />
-        </motion.svg>
+        {[0, 1, 2].map((i) => (
+          <motion.svg
+            key={i}
+            className="wwd-cta-shape-1"
+            viewBox="0 0 1000 800"
+            fill="none"
+            initial={{ x: 0, opacity: 0 }}
+            animate={isInView ? {
+              x: [0, 800],
+              opacity: [0, 1, 1, 0]
+            } : { x: 0, opacity: 0 }}
+            transition={{
+              duration: 6,
+              repeat: Infinity,
+              ease: "linear",
+              delay: i * 2,
+              times: [0, 0.2, 0.8, 1]
+            }}
+            style={{ overflow: 'visible' }}
+          >
+            <path d="M200,0 L800,400 L200,800" stroke="#939393" strokeOpacity="0.19" strokeWidth="180" strokeLinecap="butt" strokeLinejoin="miter" />
+          </motion.svg>
+        ))}
       </div>
     </section>
   );

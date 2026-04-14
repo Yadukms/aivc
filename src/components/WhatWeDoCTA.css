@@ -102,13 +102,15 @@
 .wwd-cta-shape-1,
 .wwd-cta-shape-2 {
   position: absolute;
-  height: 120%;
+  height: 135%;
+  /* Increased height to over-touch margins */
   width: auto;
 }
 
 .wwd-cta-shape-1 {
   right: 100px;
-  top: -5%;
+  top: -20%;
+  transform: translateY(50%);
 }
 
 .wwd-cta-shape-2 {
