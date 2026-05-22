@@ -1,0 +1,165 @@
+.wwd-how {
+  width: 100%;
+  font-family: 'Public Sans', sans-serif;
+}
+
+.wwd-how-main-section {
+  background-color: #163339;
+  /* Matches the dark teal background in the screenshot */
+  padding: 120px 0;
+  width: 100%;
+}
+
+.wwd-how-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 244px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+}
+
+.wwd-how-left {
+  flex: 0 0 auto;
+}
+
+.wwd-how-title {
+  font-size: 48px;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: -1px;
+
+}
+
+.wwd-how-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  min-width: 0;
+}
+
+.wwd-how-text {
+  font-size: 22px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  width: 100%;
+  max-width: 560px;
+}
+
+.teal-text {
+  color: #00d1d4;
+  font-weight: 600;
+}
+
+/* Bottom Bar */
+.wwd-how-bottom-bar {
+  background-color: #1D4648;
+  /* Darker bottom bar background */
+  height: 90px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.wwd-how-bottom-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.wwd-how-bottom-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.wwd-bottom-item {
+  color: #30F7FF;
+
+  font-family: "Public Sans";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  /* 42px */
+  text-transform: uppercase;
+}
+
+.wwd-bottom-arrow {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 42px;
+  font-weight: 300;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .wwd-how-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 0 40px;
+  }
+
+  .wwd-how-title {
+    font-size: 36px;
+  }
+
+  .wwd-how-right {
+    justify-content: flex-start;
+  }
+
+  .wwd-how-bottom-items {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .wwd-how-main-section {
+    padding: 60px 0;
+  }
+
+  .wwd-how-container {
+    padding: 0 1.5rem;
+    gap: 20px;
+  }
+
+  .wwd-how-title {
+    font-size: 28px;
+    letter-spacing: -0.5px;
+  }
+
+  .wwd-how-text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .wwd-how-bottom-bar {
+    height: auto;
+    padding: 25px 0;
+  }
+
+  .wwd-how-bottom-container {
+    padding: 0 1.5rem;
+  }
+
+  .wwd-how-bottom-items {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 12px;
+  }
+
+  .wwd-bottom-item {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .wwd-bottom-arrow {
+    font-size: 18px;
+  }
+}

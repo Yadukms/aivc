@@ -1,0 +1,276 @@
+.inv-how {
+  background-color: #0f2729;
+  /* Dark teal background */
+  color: #ffffff;
+  padding: 80px 5%;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.inv-how-container {
+  max-width: 1446px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inv-how-title {
+  font-family: "Public Sans", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+  line-height: 1.2;
+}
+
+.inv-how-columns {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  /* Align the bars to the bottom */
+  gap: 100px;
+  margin-top: 0;
+  margin-bottom: 60px;
+  width: 100%;
+}
+
+.inv-how-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  /* Space between chart and box */
+  flex: 1;
+  max-width: 200px;
+}
+
+.inv-how-col-header {
+  text-align: center;
+  min-height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+.inv-how-col-multiplier {
+  font-family: "Public Sans", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #30F7FF;
+  margin: 0 0 8px 0;
+}
+
+.inv-how-col-desc {
+  font-family: "Public Sans", sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.inv-how-bar-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  width: 100%;
+  line-height: 0;
+  font-size: 0;
+}
+
+.inv-how-chart {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.inv-how-effect {
+  width: 122.15%;
+  /* 375px / 307px exactly to match native width ratio */
+  height: auto;
+  display: block;
+  margin-left: -40px;
+  padding: 0;
+  flex-shrink: 0;
+  /* Prevent unwanted squishing */
+}
+
+.inv-how-text-box {
+  width: 100%;
+  padding: 12px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+  margin-left: -60px;
+  border-radius: 8px;
+  border: 1px solid #4DA6A9;
+}
+
+.inv-how-text-box-1 {
+  background-color: transparent;
+}
+
+.inv-how-text-box-2 {
+  background: rgba(23, 134, 144, 0.15);
+}
+
+.inv-how-text-box-3 {
+  background: rgba(32, 155, 143, 0.42);
+}
+
+.inv-how-box-text {
+  font-family: "Public Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.inv-how-drivers {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+  max-width: 900px;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.inv-how-driver {
+  padding: 30px 40px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  position: relative;
+}
+
+.inv-how-driver-1 {
+  border-radius: 16px;
+  border: 2px solid #36D1DF;
+  background: rgba(23, 134, 144, 0.40);
+}
+
+.inv-how-driver-2 {
+  border-radius: 16px;
+  border: 2px solid #1DEFDA;
+  background: rgba(32, 155, 143, 0.46);
+}
+
+.inv-how-driver-indicator {
+  width: 6px;
+  height: 105px;
+  background-color: #30F7FF;
+  border-radius: 4px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.inv-how-driver-text {
+  font-family: "Public Sans", sans-serif;
+  font-size: 24px;
+  line-height: 1.6;
+  color: #ffffff;
+  margin: 0;
+}
+
+.highlight-cyan {
+  color: #30F7FF;
+  font-weight: 700;
+}
+
+.inv-how-source {
+  font-family: "Public Sans", sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 600;
+  text-align: center;
+  opacity: 0.9;
+  margin-bottom: 129px;
+}
+
+/* Mobile responsive */
+@media (max-width: 900px) {
+  .inv-how {
+    height: auto;
+    padding: 80px 1.5rem;
+  }
+
+  .inv-how-title {
+    font-size: 32px;
+    margin-bottom: 50px;
+  }
+
+  .inv-how-columns {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 60px;
+  }
+
+  .inv-how-effect {
+    width: 120%;
+    margin-left: -40px;
+  }
+
+  .inv-how-text-box {
+    margin-left: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .inv-how-box-text {
+    font-size: 18px;
+  }
+
+  .inv-how-driver {
+    padding: 20px;
+  }
+
+  .inv-how-driver-indicator {
+    height: auto;
+    align-self: stretch;
+  }
+
+  .inv-how-driver-text {
+    font-size: 18px;
+  }
+
+  .inv-how-source {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .inv-how-title {
+    font-size: 26px;
+  }
+
+  .inv-how-col-multiplier {
+    font-size: 32px;
+  }
+
+  .inv-how-col-desc {
+    font-size: 15px;
+  }
+
+  .inv-how-driver-text {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .inv-how-source {
+    font-size: 13px;
+  }
+}

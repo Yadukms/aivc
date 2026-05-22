@@ -1,0 +1,93 @@
+.possible-section {
+  position: relative;
+  width: 100%;
+  min-height: 1700px;
+  background-image: url('/p1.png');
+  background-size: cover;
+  background-position: center top; /* Align top to fill the gap */
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 5%;
+  overflow: visible; /* Allow overlap */
+  
+  margin-top: -450px; 
+  margin-bottom: 0;
+  z-index: 0;
+  background-color: #000; /* Seamless transition */
+}
+
+.possible-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.possible-box {
+  background-color: transparent;
+  padding: 0;
+  text-align: center;
+  box-shadow: none;
+  max-width: 900px;
+  width: 100%;
+}
+
+.possible-title {
+  color: #ffffff;
+  font-family: 'Public Sans', sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0;
+  letter-spacing: -1px;
+}
+
+.possible-subtitle {
+  color: #ffffff;
+  font-family: 'Public Sans', sans-serif;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 400;
+  margin-top: 40px;
+  opacity: 0.9;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1024px) {
+  .possible-section {
+    margin-top: -150px;
+    min-height: 600px;
+  }
+
+  .possible-box {
+    padding: 40px 30px;
+  }
+
+  .possible-title {
+    font-size: 32px;
+  }
+
+  .possible-subtitle {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+    .possible-section {
+        margin-top: -50px; /* Reduce overlap on small screens as clip-path is removed there */
+        padding: 60px 20px;
+    }
+    
+    .possible-container {
+        margin-top: 0;
+    }
+
+    .possible-title {
+        font-size: 26px;
+    }
+}

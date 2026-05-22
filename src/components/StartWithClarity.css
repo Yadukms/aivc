@@ -1,0 +1,133 @@
+.start-with-clarity {
+  position: relative;
+  width: 100%;
+  padding: 140px 20px;
+  background: radial-gradient(circle at center, #0c383c 5%, #092a2d 100%);
+  /* Deep teal/green with centered glow */
+  overflow: hidden;
+  font-family: 'Public Sans', sans-serif;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swc-bg-shapes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Base shape styling */
+.swc-shape {
+  position: absolute;
+}
+
+/* Left shapes */
+.swc-left-1 {
+  top: 150px;
+  left: -100px;
+  height: 100%;
+  width: auto;
+  z-index: 1;
+}
+
+.swc-left-2 {
+  top: 0;
+  left: 0;
+  height: 120%;
+  width: auto;
+  z-index: 0;
+  opacity: 0.6;
+}
+
+/* Right shapes */
+.swc-right-1 {
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: auto;
+  z-index: 0;
+  opacity: 0.1;
+}
+
+.swc-right-2 {
+  top: -150px;
+  right: 0;
+  height: 100%;
+  width: auto;
+  z-index: 0;
+
+}
+
+.swc-container {
+  position: relative;
+  z-index: 10;
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
+
+.swc-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.swc-title {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+.swc-subtitle {
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 35px;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.swc-pitch {
+  font-size: 18px;
+  font-weight: 600;
+  color: #09888E;
+  margin-bottom: 40px;
+}
+
+.swc-button {
+  display: inline-block;
+  padding: 14px 40px;
+  background-color: #09888E;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.swc-button:hover {
+  background-color: #066b70;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .start-with-clarity {
+    padding: 100px 20px;
+  }
+
+  .swc-title {
+    font-size: 32px;
+  }
+
+  .swc-subtitle {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,251 @@
+.wwa-testimonials {
+  position: relative;
+  background-color: #F4FFFF;
+  /* Light greenish white background */
+  padding: 200px 0 100px;
+  /* 150px at the top as requested */
+  min-height: 1109px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.wwa-testimonials-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+  z-index: 2;
+  text-align: left;
+  /* Changed from center to left */
+}
+
+.wwa-testimonials-title {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  color: #1A3442;
+}
+
+.wwa-testimonials-tabs {
+  display: flex;
+  justify-content: flex-start;
+  /* Changed from center */
+  gap: 85px;
+  margin-bottom: 123px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.wwa-tab-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1A3442;
+  opacity: 0.8;
+  padding-bottom: 15px;
+  cursor: pointer;
+  position: relative;
+  transition: opacity 0.3s ease;
+}
+
+.wwa-tab-btn.active {
+  opacity: 1;
+  color: #09888E;
+}
+
+.active-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #09888E;
+}
+
+.wwa-testimonials-content {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 60px;
+  width: 100%;
+  margin: 0;
+  height: 520px; /* Lock height on desktop to prevent visual layout shifts */
+}
+
+.wwa-testimonial-image-col {
+  flex: 0 0 55%;
+}
+
+.wwa-testimonial-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.wwa-testimonial-text-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 10px;
+  height: 100%;
+}
+
+.wwa-quote-marks {
+  flex: 0 0 auto;
+}
+
+.wwa-quote-svg-wrapper {
+  display: flex;
+  gap: 4px;
+}
+
+.wwa-quote-marks.left {
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+
+.wwa-testimonial-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%; /* Spans full height of the desktop column */
+}
+
+.wwa-testimonial-quote {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #1A3442;
+  font-style: normal;
+  margin: 0 0 20px 0;
+  opacity: 0.9;
+  text-align: left;
+}
+
+.wwa-quote-marks.right {
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+
+.wwa-testimonial-line {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(9, 136, 142, 0.2);
+  margin-top: auto; /* Acts as a spring pushing elements below to a stationary bottom alignment */
+  margin-bottom: 30px;
+}
+
+.wwa-testimonial-author {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1A3442;
+  margin-bottom: 40px;
+}
+
+.wwa-testimonial-bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.wwa-testimonial-pagination {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.wwa-page-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+}
+
+.wwa-page-btn:hover {
+  transform: scale(1.1);
+}
+
+.wwa-page-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1A3442;
+  opacity: 0.8;
+}
+
+.wwa-view-more-btn {
+  padding: 10px 25px;
+  background: transparent;
+  border: 1px solid #09888E;
+  color: #09888E;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.wwa-view-more-btn:hover {
+  background-color: #09888E;
+  color: #ffffff;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .wwa-testimonials {
+    padding: 100px 0 60px;
+    min-height: auto;
+  }
+
+  .wwa-testimonials-tabs {
+    flex-wrap: wrap;
+    gap: 20px 40px;
+    margin-bottom: 60px;
+  }
+
+  .wwa-testimonials-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    height: auto; /* Reset desktop locked height */
+  }
+
+  .wwa-testimonial-image-col {
+    width: 100%;
+    height: 350px; /* Secure height for mobile image rendering */
+  }
+
+  .wwa-quote-marks {
+    display: none;
+  }
+
+  .wwa-testimonial-item {
+    padding-top: 0;
+    height: auto; /* Reset desktop locked height */
+  }
+
+  .wwa-testimonial-quote {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .wwa-testimonial-line {
+    margin-top: 0; /* Reset desktop auto margin spring on mobile */
+  }
+
+  .wwa-testimonial-author {
+    margin-bottom: 20px;
+  }
+
+  .wwa-testimonial-bottom-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}

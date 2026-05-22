@@ -1,0 +1,20 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+html, body, #root, .app {
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.app {
+  /* padding-top: 66px; Offset for fixed header removed so header blends with hero */
+}
+
+@media (max-width: 968px) {
+  .app {
+    /* padding-top: 66px; Match desktop */
+  }
+}

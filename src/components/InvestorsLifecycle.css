@@ -1,0 +1,97 @@
+.inv-lifecycle {
+  background-image: url('/investorlifecycle.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 5%;
+}
+
+.inv-lifecycle-card {
+  background-color: #1a3233;
+  width: 100%;
+  max-width: 1200px;
+  padding: 60px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inv-lifecycle-title {
+  font-family: "Public Sans", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 1.3;
+}
+
+.inv-lifecycle-subtext {
+  font-family: "Public Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #30F7FF;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+.inv-lifecycle-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px 60px;
+  width: 100%;
+  text-align: left;
+}
+
+.inv-lifecycle-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.inv-lifecycle-icon {
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.inv-lifecycle-icon img {
+  width: 28px;
+  height: 28px;
+}
+
+.inv-lifecycle-item-text {
+  font-family: "Public Sans", sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.inv-highlight {
+  color: #30F7FF;
+  font-weight: 700;
+}
+
+/* Mobile responsive */
+@media (max-width: 1024px) {
+  .inv-lifecycle-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .inv-lifecycle-card {
+    padding: 60px 30px;
+  }
+
+  .inv-lifecycle-title {
+    font-size: 32px;
+  }
+
+  .inv-lifecycle-item-text {
+    font-size: 18px;
+  }
+}

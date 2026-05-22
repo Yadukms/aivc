@@ -1,0 +1,76 @@
+.wwa-why {
+  padding: 100px 0;
+  background-color: #ffffff;
+}
+
+.wwa-why-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.wwa-why-left {
+  flex: 1;
+}
+
+.wwa-why-right {
+  flex: 1.2;
+}
+
+.wwa-why-title {
+  font-size: 48px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #1a1a1a;
+}
+
+.wwa-why-text {
+  font-size: 22px;
+  line-height: 1.6;
+  color: #4a4a4a;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.wwa-why-teal {
+  color: #009d9d;
+  font-weight: 700;
+}
+
+.mt-4 {
+  margin-top: 32px;
+}
+
+/* Mobile responsive */
+@media (max-width: 968px) {
+  .wwa-why-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .wwa-why-title {
+    font-size: 40px;
+  }
+  
+  .wwa-why-text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wwa-why {
+    padding: 60px 0;
+  }
+  
+  .wwa-why-title {
+    font-size: 32px;
+  }
+  
+  .wwa-why-text {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,54 @@
+.insights-hero {
+  position: relative;
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0c2323;
+  color: #ffffff;
+  padding: 120px 1.5rem 80px 1.5rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.insights-hero-container {
+  max-width: 800px;
+  margin: 0 auto;
+  z-index: 10;
+}
+
+.insights-hero-title {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 56px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.insights-hero-subtitle {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .insights-hero {
+    min-height: 50vh;
+    padding: 140px 1.5rem 60px 1.5rem;
+  }
+
+  .insights-hero-title {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+
+  .insights-hero-subtitle {
+    font-size: 16px;
+  }
+}

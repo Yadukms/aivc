@@ -1,0 +1,148 @@
+.whymodel-section {
+  width: 100%;
+  height: 700px;
+  background-color: #051d1d;
+  /* Deep dark green */
+  color: #ffffff;
+  font-family: 'Public Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.whymodel-ellipse {
+  position: absolute;
+  top: -250px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1200px;
+  height: 500px;
+  border-radius: 1389px;
+  background: rgba(9, 158, 164, 0.10);
+  filter: blur(147px);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.whymodel-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+}
+
+.whymodel-intro {
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 80px;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.whymodel-grid {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  margin: 0 360px 100px 360px;
+}
+
+.whymodel-column {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 80px;
+}
+
+.whymodel-icon {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whymodel-icon svg {
+  width: 32px;
+  /* Smaller, more delicate icons */
+  height: 32px;
+}
+
+.whymodel-benefit-text {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+  text-align: center;
+  align-items: center;
+}
+
+.whymodel-divider {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  /* Subtle solid line */
+}
+
+.whymodel-outro {
+  font-size: 26px;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.3px;
+  text-align: center;
+}
+
+.whymodel-teal {
+  color: #00d1d4;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 900px) {
+  .whymodel-section {
+    height: auto;
+    padding: 80px 0;
+  }
+
+  .whymodel-container {
+    padding: 0 1.5rem;
+  }
+
+  .whymodel-intro {
+    font-size: 20px;
+    margin-bottom: 40px;
+    line-height: 1.4;
+  }
+
+  .whymodel-grid {
+    flex-direction: column;
+    margin: 0 0 50px 0;
+    gap: 45px;
+  }
+
+  .whymodel-divider {
+    display: none;
+  }
+
+  .whymodel-column {
+    padding: 0;
+  }
+
+  .whymodel-benefit-text {
+    font-size: 20px;
+  }
+
+  .whymodel-outro {
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 0 10px;
+  }
+}

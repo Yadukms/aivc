@@ -1,0 +1,131 @@
+.wwa-leadership {
+  padding: 120px 0;
+  background-color: #ffffff;
+  color: #1A3442;
+}
+
+.wwa-leadership-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 5%;
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+
+.wwa-leadership-left,
+.wwa-leadership-right {
+  flex: 1;
+}
+
+.wwa-leadership-title {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #1A3442;
+  letter-spacing: -0.02em;
+}
+
+.wwa-leadership-subtext {
+  font-size: 26px;
+  color: #1B1B1B;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+
+.wwa-leadership-roles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 40px;
+  max-width: 450px;
+  margin-bottom: 40px;
+}
+
+.wwa-role-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.wwa-role-icon-img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.wwa-role-name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1A3442;
+}
+
+.wwa-leadership-para {
+  font-size: 22px;
+  color: #6a7c85; /* Grayish blue to match image */
+  line-height: 1.6;
+  margin-bottom: 30px;
+  max-width: 90%;
+}
+
+.wwa-leadership-divider {
+  width: 250px;
+  height: 2px;
+  background-color: #009d9d;
+  margin-bottom: 30px;
+}
+
+.wwa-leadership-bottom-text {
+  font-size: 24px;
+  font-weight: 600;
+  color: #009d9d;
+}
+
+.wwa-leadership-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: 4px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .wwa-leadership {
+    padding: 60px 0;
+  }
+
+  .wwa-leadership-container {
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 1.5rem;
+  }
+
+  .wwa-leadership-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .wwa-leadership-subtext {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .wwa-leadership-roles {
+    max-width: 100%;
+    gap: 15px 25px;
+  }
+
+  .wwa-role-name {
+    font-size: 18px;
+  }
+
+  .wwa-leadership-para {
+    font-size: 16px;
+    max-width: 100%;
+  }
+
+  .wwa-leadership-bottom-text {
+    font-size: 18px;
+  }
+}
