@@ -27,7 +27,7 @@ const ConnectWithUs = () => {
     try {
 
       
-      const response = await fetch("/send-email", {
+    const response = await fetch("/send-email", {
 
         method: "POST",
 
